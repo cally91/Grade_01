@@ -1,4 +1,4 @@
-package com.biz.exec;
+package com.biz.conrroller;
 
 import com.biz.mode.ScoreVO;
 

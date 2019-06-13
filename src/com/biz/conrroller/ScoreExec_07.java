@@ -1,4 +1,4 @@
-package com.biz.exec;
+package com.biz.conrroller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 import com.biz.mode.ScoreVO;
 
-public class ScoreExec_06 {
+public class ScoreExec_07 {
 
 	public static void main(String[] args) {
 
@@ -38,7 +38,19 @@ public class ScoreExec_06 {
 			
 					
 		}
+		int scLen=scList.size();
+		for (int i=0; i <scLen ;i++) {
+			ScoreVO vo= scList.get(i);
+					int  totol =vo.getKor();
+			totol +=vo.getEng();
+			totol +=vo.getMath();
+		} 
 		
+		for (ScoreVO vo: scList) {
+			System.out.println(vo.toString());
+			
+					
+		}
 		
 		
 		
